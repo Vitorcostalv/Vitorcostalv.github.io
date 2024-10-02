@@ -167,8 +167,34 @@ header nav ul li a:hover {
 }
 
 /* Tooltip para o resumo da linguagem */
+/* Configuração para os ícones de linguagem e suas descrições */
+.languages-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.language-icon {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    text-align: center; /* Ajusta a centralização dos ícones */
+}
+
+.language-icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.language-icon img:hover {
+    transform: scale(1.2);
+}
+
+/* Tooltip para o resumo da linguagem (descrição) */
 .language-icon span {
-    visibility: hidden;
+    visibility: hidden; /* Esconder o texto por padrão */
     width: 150px;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -181,20 +207,11 @@ header nav ul li a:hover {
     margin-left: -75px;
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .language-icon:hover span {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible; 
+    opacity: 1; 
 }
 
-footer {
-    background-color: #181824;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    color: rgba(255, 255, 255, 0.4);
-}
