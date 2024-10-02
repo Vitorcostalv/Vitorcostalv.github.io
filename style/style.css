@@ -113,6 +113,23 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.contact-info {
+    font-size: 1.2rem;
+    color: #00ffaa; 
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px solid var(--primary-color); 
+    border-radius: 8px;
+    background-color: rgba(0, 255, 170, 0.1); 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-info:hover {
+    background-color: rgba(0, 255, 170, 0.2); 
+    transform: scale(1.02); 
+}
+
+
 #contact form {
     max-width: 600px;
     margin: 0 auto;
@@ -121,26 +138,8 @@ header nav ul li a:hover {
     border-radius: 10px;
 }
 
-#contact form input {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #2e2e3e;
-    color: var(--text-color);
-}
 
-#contact form input[type="submit"] {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
 
-#contact form input[type="submit"]:hover {
-    background-color: #1be6a6;
-}
 
 .languages-container {
     display: flex;
