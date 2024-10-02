@@ -142,7 +142,32 @@ header nav ul li a:hover {
     background-color: #1be6a6;
 }
 
+.languages-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
 /* Estilo para os ícones de linguagens */
+.language-icon {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.language-icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.language-icon img:hover {
+    transform: scale(1.2);
+}
+
+/* Tooltip para o resumo da linguagem */
+/* Configuração para os ícones de linguagem e suas descrições */
 .languages-container {
     display: flex;
     justify-content: space-around;
@@ -189,56 +214,36 @@ header nav ul li a:hover {
     visibility: visible; 
     opacity: 1; 
 }
-
-/* Estilos para a seção de projetos */
 #projects {
     padding: 50px 0;
+    background-color: #282838;
     text-align: center;
-    max-width: 300px; /* Limita a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    transition: transform 0.3s ease-in-out;
 }
 
 #projects h2 {
     color: var(--primary-color);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .project-gallery {
+    max-height: 400px; 
+    overflow-y: auto; 
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .project-item {
-    margin: 20px;
-    text-align: center;
+    margin: 10px 0; 
 }
 
 .project-item img {
-    max-width: 300px; /* Limita a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 10px; 
     transition: transform 0.3s ease-in-out;
 }
 
 .project-item img:hover {
-    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
-}
-
-.project-item p {
-    margin-top: 10px;
-    color: var(--text-color);
-    font-size: 1.2rem;
-}
-
-footer {
-    background-color: #181824;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
