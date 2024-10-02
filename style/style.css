@@ -226,24 +226,22 @@ header nav ul li a:hover {
 }
 
 .project-gallery {
-    max-height: 400px; 
-    overflow-y: auto; 
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .project-item {
-    margin: 10px 0; 
+    margin: 10px; /* Espaçamento entre os projetos */
 }
 
 .project-item img {
     width: 100%; 
-    max-width: 300px; 
+    max-width: 350px; 
     border-radius: 10px; 
     transition: transform 0.3s ease-in-out;
 }
 
 .project-item img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.05); 
 }
