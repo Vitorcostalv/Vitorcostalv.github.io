@@ -233,13 +233,19 @@ header nav ul li a:hover {
 
 .project-item {
     margin: 10px; 
+    flex: 1 1 300px;
+    max-width: 350px; 
 }
 
 .project-item img {
     width: 100%; 
-    max-width: 350px; 
     border-radius: 10px; 
     transition: transform 0.3s ease-in-out;
 }
+
+.project-item img:hover {
+    transform: scale(1.05); 
+}
+
 
 
