@@ -226,13 +226,13 @@ header nav ul li a:hover {
 }
 
 .project-gallery {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
 }
 
 .project-item {
-    margin: 10px; /* Espaçamento entre os projetos */
+    margin: 10px; 
 }
 
 .project-item img {
@@ -242,6 +242,4 @@ header nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.project-item img:hover {
-    transform: scale(1.05); 
-}
+
